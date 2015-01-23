@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #define NO_OF_CHARS 256
 int *getCharCountArray(char *str)
 {
@@ -6,6 +7,6 @@ int *getCharCountArray(char *str)
 
   for (i = 0; *(str+i);  i++)
     count[*(str+i)]++;
-
+ printf("\nI am In getCharCountArray\n");
   return count;
 }
